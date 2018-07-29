@@ -357,7 +357,7 @@
       "title": "Add Images to Your Website",
       "description": [
         "用 <code>img</code> 标签来为你的网站添加图片，其中 <code>src</code> 属性指向一个图片的地址。",
-        "举例如下：",
+        "例如：",
         "<code>&#60img src=\"https://www.your-image-source.com/your-image.jpg\"&#62</code>",
         "注意：<code>img</code> 标签是自关闭标签，不需要结束标记。",
         "所有的 <code>img</code> 标签必须有 <code>alt</code> 属性，<code>alt</code> 属性的文本是当图片无法加载时显示的替代文本，这对于通过屏幕阅读器来浏览网页的用户非常重要。",
@@ -369,7 +369,7 @@
         "让我们给网站添加图片：",
         "在 <code>h2</code> 标签前，插入一个 <code>img</code> 标签",
         "现在设置 <code>src</code> 属性指向这个地址：",
-        "<code>https://bit.ly/fcc-relaxing-cat</code>",
+        "<code>https://ofa83l6ao.qnssl.com/relaxing-cat.jpg</code>",
         "最后不要忘记给图片添加一个 <code>alt</code> 文本。"
       ],
       "tests": [
@@ -444,7 +444,7 @@
             "  ",
             "  ",
             "  ",
-            "  <img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\">",
+            "  <img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\">",
             "  ",
             "  <p>在大家心目中，猫是慵懒和可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，怎能不惹人怜爱。</p>",
             "  <p>养猫有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，你一定没有想过，猫咪会到处掉毛，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，猫咪慎入，没有一定的准备，切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。</p>",
@@ -507,7 +507,7 @@
             "  ",
             "  <a href=\"http://freecatphotoapp.com\" target=\"_blank\">cat photos</a>",
             "  ",
-            "  <img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\">",
+            "  <img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\">",
             "  ",
             "  <p>在大家心目中，猫是慵懒和可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，怎能不惹人怜爱。 养猫有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，你一定没有想过，猫咪会到处掉毛，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，猫咪慎入，没有一定的准备，切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。 在大家心目中，猫是慵懒和可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，怎能不惹人怜爱。</p>",
             "  <p>养猫有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，你一定没有想过，猫咪会到处掉毛，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，猫咪慎入，没有一定的准备，切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。 在大家心目中，猫是慵懒和可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，怎能不惹人怜爱。 养猫有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，你一定没有想过，猫咪会到处掉毛，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，猫咪慎入，没有一定的准备，切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。</p>",
@@ -559,8 +559,8 @@
           "testString": "assert(($(\"a[href=\\\"http://freecatphotoapp.com\\\"]\").parent().text().match(/View\\smore\\s/gi) || $(\"a[href=\\\"http://www.freecatphotoapp.com\\\"]\").parent().text().match(/View\\smore\\s/gi)), '段落的文本应为：View more （记得 more 后面有一个空格）。');"
         },
         {
-          "text": "锚点的文本不应该为：View more。",
-          "testString": "assert(!$(\"a\").text().match(/View\\smore/gi), '锚点的文本不应该为：View more。');"
+          "text": "段落的文本不应该为：View more。",
+          "testString": "assert(!$(\"a\").text().match(/View\\smore/gi), '段落的文本不应该为：View more。');"
         },
         {
           "text": "确保每个段落有结束标记。",
@@ -583,7 +583,7 @@
             "  ",
             "  <a href=\"http://freecatphotoapp.com\" target=\"_blank\">cat photos</a>",
             "  ",
-            "  <img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\">",
+            "  <img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\">",
             "  ",
             "  <p>在大家心目中，猫是慵懒和可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，怎能不惹人怜爱。</p>",
             "  <p>养猫有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，你一定没有想过，猫咪会到处掉毛，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，猫咪慎入，没有一定的准备，切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。</p>",
@@ -598,16 +598,16 @@
       "id": "bad87fee1348bd9aedf08817",
       "title": "Make Dead Links Using the Hash Symbol",
       "description": [
-        "Sometimes you want to add <code>a</code> elements to your website before you know where they will link.",
-        "This is also handy when you're changing the behavior of a link using <code>JavaScript</code>, which we'll learn about later.",
+        "有时你想为网站添加一个 <code>a</code> 元素，但此时你还不知道要将它链接到哪儿，这时可以使用固定链接。",
+        "在后面的课程中我们会学到：如何轻松通过 <code>JavaScript</code> 更改链接指向的地址。",
         "<hr>",
-        "The current value of the <code>href</code> attribute is a link that points to \"http://freecatphotoapp.com\". Replace the <code>href</code> attribute value with a <code>#</code>, also known as a hash symbol, to create a dead link.",
-        "For example: <code>href=\"#\"</code>"
+        "<code>href</code> 属性的当前值是指向 \"http://freecatphotoapp.com\"，将 <code>href</code> 属性的值替换为 <code>#</code>，也称为井号，就可以创建固定链接。",
+        "例如: <code>href=\"#\"</code>"
       ],
       "tests": [
         {
-          "text": "Your <code>a</code> element should be a dead link with the value of the <code>href</code> attribute set to \"#\".",
-          "testString": "assert($(\"a\").attr(\"href\") === \"#\", 'Your <code>a</code> element should be a dead link with the value of the <code>href</code> attribute set to \"#\".');"
+          "text": "<code>a</code> 元素的 <code>href</code> 属性值应该为 \"#\"。",
+          "testString": "assert($(\"a\").attr(\"href\") === \"#\", '<code>a</code> 元素的 <code>href</code> 属性值应该为 \"#\"。);"
         }
       ],
       "challengeType": 0,
@@ -621,7 +621,7 @@
             "<main>",
             "  <p>Click here to view more <a href=\"http://freecatphotoapp.com\" target=\"_blank\">cat photos</a>.</p>",
             "  ",
-            "  <img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\">",
+            "  <img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\">",
             "  ",
             "  <p>在大家心目中，猫是慵懒和可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，怎能不惹人怜爱。</p>",
             "  <p>养猫有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，你一定没有想过，猫咪会到处掉毛，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，猫咪慎入，没有一定的准备，切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。</p>",
@@ -636,26 +636,26 @@
       "id": "bad87fee1348bd9aedf08820",
       "title": "Turn an Image into a Link",
       "description": [
-        "You can make elements into links by nesting them within an <code>a</code> element.",
-        "Nest your image within an <code>a</code> element. Here's an example:",
-        "<code>&#60;a href=\"#\"&#62;&#60;img src=\"https://bit.ly/fcc-running-cats\" alt=\"Three kittens running towards the camera.\"&#62;&#60;/a&#62;</code>",
-        "Remember to use <code>#</code> as your <code>a</code> element's <code>href</code> property in order to turn it into a dead link.",
+        "你可以通过把元素嵌套进 <code>a</code>元素里使其变成一个链接。",
+        "把你的图片嵌套进 <code>a</code> 元素。举例如下：",
+        "<code>&#60;a href=\"#\"&#62;&#60;img src=\"https://ofa83l6ao.qnssl.com/running-cats.jpg\" alt=\"三只萌萌的小猫\"&#62;&#60;/a&#62;</code>",
+        "记得通过把 <code>a</code> 元素的 <code>href</code> 属性设置为 <code>#</code> 可以创建固定链接。",
         "<hr>",
-        "Place the existing image element within an anchor element.",
-        "Once you've done this, hover over your image with your cursor. Your cursor's normal pointer should become the link clicking pointer. The photo is now a link."
+        "把现存的图片嵌套进锚点中。",
+        "当鼠标悬停在图片上时，鼠标的光标如果从箭头指针变成手形指针，那么此时图片就是一个链接了。"
       ],
       "tests": [
         {
-          "text": "Nest the existing <code>img</code> element within an <code>a</code> element.",
-          "testString": "assert($(\"a\").children(\"img\").length > 0, 'Nest the existing <code>img</code> element within an <code>a</code> element.');"
+          "text": "把现存的图片嵌套进锚点中。",
+          "testString": "assert($(\"a\").children(\"img\").length > 0, '把现存的图片嵌套进锚点中。');"
         },
         {
-          "text": "Your <code>a</code> element should be a dead link with a <code>href</code> attribute set to <code>#</code>.",
-          "testString": "assert(new RegExp(\"#\").test($(\"a\").children(\"img\").parent().attr(\"href\")), 'Your <code>a</code> element should be a dead link with a <code>href</code> attribute set to <code>#</code>.');"
+          "text": "<code>a</code> 元素的 <code>href</code> 属性应为 <code>#</code>。",
+          "testString": "assert(new RegExp(\"#\").test($(\"a\").children(\"img\").parent().attr(\"href\")), '<code>a</code> 元素的 <code>href</code> 属性应为 <code>#</code>。');"
         },
         {
-          "text": "Make sure each of your <code>a</code> elements has a closing tag.",
-          "testString": "assert(code.match(/<\\/a>/g) && code.match(/<a/g) && code.match(/<\\/a>/g).length === code.match(/<a/g).length, 'Make sure each of your <code>a</code> elements has a closing tag.');"
+          "text": "确保所有的 <code>a</code> 元素都有结束标记。",
+          "testString": "assert(code.match(/<\\/a>/g) && code.match(/<a/g) && code.match(/<\\/a>/g).length === code.match(/<a/g).length, '确保所有的 <code>a</code> 元素都有结束标记。');"
         }
       ],
       "challengeType": 0,
@@ -669,7 +669,7 @@
             "<main>",
             "  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>",
             "  ",
-            "  <img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\">",
+            "  <img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\">",
             "  ",
             "  <p>在大家心目中，猫是慵懒和可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，怎能不惹人怜爱。</p>",
             "  <p>养猫有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，你一定没有想过，猫咪会到处掉毛，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，猫咪慎入，没有一定的准备，切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。</p>",
@@ -684,30 +684,30 @@
       "id": "bad87fee1348bd9aedf08827",
       "title": "Create a Bulleted Unordered List",
       "description": [
-        "HTML has a special element for creating <code>unordered lists</code>, or bullet point style lists.",
-        "Unordered lists start with an opening <code>&#60;ul&#62;</code> element, followed by any number of <code>&#60;li&#62;</code> elements. Finally, unordered lists close with a <code>&#60;/ul&#62;</code>",
-        "For example: ",
+        "HTML 有一个特定的元素用于创建 <code>unordered lists（无序列表）</code>, 也叫项目列表。",
+        "无序列表以 <code>&#60;ul&#62;</code> 元素开始，并包含一个或多个 <code>&#60;li&#62;</code> 元素，最后以 <code>&#60;/ul&#62;</code> 结尾。",
+        "例如: ",
         "<blockquote>&#60;ul&#62;<br>&nbsp;&nbsp;&#60;li&#62;milk&#60;/li&#62;<br>&nbsp;&nbsp;&#60;li&#62;cheese&#60;/li&#62;<br>&#60;/ul&#62;</blockquote>",
-        "would create a bullet point style list of \"milk\" and \"cheese\".",
+        "将会创建一个包含 \"milk\" 和 \"cheese\" 的项目列表。",
         "<hr>",
-        "Remove the last two <code>p</code> elements and create an unordered list of three things that cats love at the bottom of the page."
+        "删除页面底部的两个 <code>p</code> 元素，然后在底部创建一个无序列表，其中包含猫咪最喜欢的三件事情。"
       ],
       "tests": [
         {
-          "text": "Create a <code>ul</code> element.",
-          "testString": "assert($(\"ul\").length > 0, 'Create a <code>ul</code> element.');"
+          "text": "创建一个 <code>ul</code> 元素。",
+          "testString": "assert($(\"ul\").length > 0, '创建一个 <code>ul</code> 元素。');"
         },
         {
-          "text": "You should have three <code>li</code> elements within your <code>ul</code> element.",
-          "testString": "assert($(\"ul li\").length > 2, 'You should have three <code>li</code> elements within your <code>ul</code> element.');"
+          "text": "你应该在 <code>li</code> 元素中添加三个 <code>li</code> 元素。",
+          "testString": "assert($(\"ul li\").length > 2, '你应该在 <code>li</code> 元素中添加三个 <code>li</code> 元素。');"
         },
         {
-          "text": "Make sure your <code>ul</code> element has a closing tag.",
-          "testString": "assert(code.match(/<\\/ul>/gi) && code.match(/<ul/gi) && code.match(/<\\/ul>/gi).length === code.match(/<ul/gi).length, 'Make sure your <code>ul</code> element has a closing tag.');"
+          "text": "确保 <code>ul</code> 元素有结束标记。",
+          "testString": "assert(code.match(/<\\/ul>/gi) && code.match(/<ul/gi) && code.match(/<\\/ul>/gi).length === code.match(/<ul/gi).length, '确保 <code>ul</code> 元素有结束标记。');"
         },
         {
-          "text": "Make sure your <code>li</code> elements have closing tags.",
-          "testString": "assert(code.match(/<\\/li>/gi) && code.match(/<li[\\s>]/gi) && code.match(/<\\/li>/gi).length === code.match(/<li[\\s>]/gi).length, 'Make sure your <code>li</code> elements have closing tags.');"
+          "text": "确保 <code>li</code> 元素都有结束标记。",
+          "testString": "assert(code.match(/<\\/li>/gi) && code.match(/<li[\\s>]/gi) && code.match(/<\\/li>/gi).length === code.match(/<li[\\s>]/gi).length, '确保 <code>li</code> 元素都有结束标记。');"
         }
       ],
       "challengeType": 0,
@@ -721,7 +721,7 @@
             "<main>",
             "  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>",
             "  ",
-            "  <a href=\"#\"><img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\"></a>",
+            "  <a href=\"#\"><img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\"></a>",
             "  ",
             "  <p>在大家心目中，猫是慵懒和可爱的化身，它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌，使得了坏，这样百变的小怪兽就集结在一只宠物上，怎能不惹人怜爱。</p>",
             "  <p>养猫有的时候，就是介于爱与恨之间，当你钦羡别人萌宠这么可爱的时候，你一定没有想过，猫咪会到处掉毛，甚至会屯老鼠，啃鞋子，用爪子爬门，你不理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，猫咪慎入，没有一定的准备，切勿随便去侍养动物。它们一旦认定你了，你就是它们的主人，如果你抛弃它们，它们必定心中重创。</p>",
@@ -736,50 +736,50 @@
       "id": "bad87fee1348bd9aedf08828",
       "title": "Create an Ordered List",
       "description": [
-        "HTML has another special element for creating <code>ordered lists</code>, or numbered lists.",
-        "Ordered lists start with an opening <code>&#60;ol&#62;</code> element, followed by any number of <code>&#60;li&#62;</code> elements. Finally, ordered lists close with a <code>&#60;/ol&#62;</code>",
-        "For example:",
+        "HTML 有一个特定的元素用于创建 <code>ordered lists（有序列表）</code>，也叫数字列表。",
+        "有序列表以 <code>&#60;ol&#62;</code> 元素开始，并包含一个或多个 <code>&#60;li&#62;</code> 元素，最后以 <code>&#60;/ol&#62;</code> 结尾。",
+        "例如:",
         "<blockquote>&#60;ol&#62;<br>&nbsp;&nbsp;&#60;li&#62;Garfield&#60;/li&#62;<br>&nbsp;&nbsp;&#60;li&#62;Sylvester&#60;/li&#62;<br>&#60;/ol&#62;</blockquote>",
-        "would create a numbered list of \"Garfield\" and \"Sylvester\".",
+        "将会创建一个包含 \"Garfield\" 和 \"Sylvester\" 的数字列表。",
         "<hr>",
-        "Create an ordered list of the top 3 things cats hate the most."
+        "创建一个关于 \"Top 3 things cats hate:\" 的有序列表。"
       ],
       "tests": [
         {
-          "text": "You should have an ordered list for \"Top 3 things cats hate:\"",
-          "testString": "assert((/Top 3 things cats hate:/i).test($(\"ol\").prev().text()), 'You should have an ordered list for \"Top 3 things cats hate:\"');"
+          "text": "页面应该有一个关于\"Top 3 things cats hate:\" 的有序列表。",
+          "testString": "assert((/Top 3 things cats hate:/i).test($(\"ol\").prev().text()), '页面应该有一个关于\"Top 3 things cats hate:\" 的有序列表。');"
         },
         {
-          "text": "You should have an unordered list for \"Things cats love:\"",
-          "testString": "assert((/Things cats love:/i).test($(\"ul\").prev().text()), 'You should have an unordered list for \"Things cats love:\"');"
+          "text": "页面应该有一个关于\"Top 3 things cats love:\" 的无序列表。",
+          "testString": "assert((/Top 3 things cats love:/i).test($(\"ul\").prev().text()), '页面应该有一个关于\"Top 3 things cats love:\" 的无序列表。');"
         },
         {
-          "text": "You should have only one <code>ul</code> element.",
-          "testString": "assert.equal($(\"ul\").length, 1, 'You should have only one <code>ul</code> element.');"
+          "text": "页面应该只有一个 <code>ul</code> 元素。",
+          "testString": "assert.equal($(\"ul\").length, 1, '页面应该只有一个 <code>ul</code> 元素。');"
         },
         {
-          "text": "You should have only one <code>ol</code> element.",
-          "testString": "assert.equal($(\"ol\").length, 1, 'You should have only one <code>ol</code> element.');"
+          "text": "页面应该只有一个 <code>ol</code> 元素。",
+          "testString": "assert.equal($(\"ol\").length, 1, '页面应该只有一个 <code>ol</code> 元素。');"
         },
         {
-          "text": "You should have three <code>li</code> elements within your <code>ul</code> element.",
-          "testString": "assert.equal($(\"ul li\").length, 3, 'You should have three <code>li</code> elements within your <code>ul</code> element.');"
+          "text": "<code>ul</code> 元素应该包含3个 <code>li</code> 元素。",
+          "testString": "assert.equal($(\"ul li\").length, 3, '<code>ul</code> 元素应该包含3个 <code>li</code> 元素。');"
         },
         {
-          "text": "You should have three <code>li</code> elements within your <code>ol</code> element.",
-          "testString": "assert.equal($(\"ol li\").length, 3, 'You should have three <code>li</code> elements within your <code>ol</code> element.');"
+          "text": "<code>ol</code> 元素应该包含3个 <code>li</code> 元素。",
+          "testString": "assert.equal($(\"ol li\").length, 3, '<code>ol</code> 元素应该包含3个 <code>li</code> 元素。');"
         },
         {
-          "text": "Make sure your <code>ul</code> element has a closing tag.",
-          "testString": "assert(code.match(/<\\/ul>/g) && code.match(/<\\/ul>/g).length === code.match(/<ul>/g).length, 'Make sure your <code>ul</code> element has a closing tag.');"
+          "text": "确保 <code>ul</code> 有结束标记",
+          "testString": "assert(code.match(/<\\/ul>/g) && code.match(/<\\/ul>/g).length === code.match(/<ul>/g).length, '确保 <code>ul</code> 有结束标记');"
         },
         {
-          "text": "Make sure your <code>ol</code> element has a closing tag.",
-          "testString": "assert(code.match(/<\\/ol>/g) && code.match(/<\\/ol>/g).length === code.match(/<ol>/g).length, 'Make sure your <code>ol</code> element has a closing tag.');"
+          "text": "确保 <code>ol</code> 有结束标记",
+          "testString": "assert(code.match(/<\\/ol>/g) && code.match(/<\\/ol>/g).length === code.match(/<ol>/g).length, '确保 <code>ol</code> 有结束标记');"
         },
         {
-          "text": "Make sure your <code>li</code> element has a closing tag.",
-          "testString": "assert(code.match(/<\\/li>/g) && code.match(/<li>/g) && code.match(/<\\/li>/g).length === code.match(/<li>/g).length, 'Make sure your <code>li</code> element has a closing tag.');"
+          "text": "确保 <code>li</code> 有结束标记",
+          "testString": "assert(code.match(/<\\/li>/g) && code.match(/<li>/g) && code.match(/<\\/li>/g).length === code.match(/<li>/g).length, '确保 <code>li</code> 有结束标记');"
         }
       ],
       "challengeType": 0,
@@ -793,13 +793,13 @@
             "<main>",
             "  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>",
             "  ",
-            "  <a href=\"#\"><img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\"></a>",
+            "  <a href=\"#\"><img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\"></a>",
             "  ",
-            "  <p>Things cats love:</p>",
+            "  <p>Top 3 things cats love:</p>",
             "  <ul>",
-            "    <li>cat nip</li>",
-            "    <li>laser pointers</li>",
-            "    <li>lasagna</li>",
+            "    <li>猫薄荷</li>",
+            "    <li>激光笔</li>",
+            "    <li>千层饼</li>",
             "  </ul>",
             "  <p>Top 3 things cats hate:</p>",
             "  ",
@@ -839,7 +839,7 @@
             "<main>",
             "  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>",
             "  ",
-            "  <a href=\"#\"><img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\"></a>",
+            "  <a href=\"#\"><img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\"></a>",
             "  ",
             "  <p>Things cats love:</p>",
             "  <ul>",
@@ -898,7 +898,7 @@
             "<main>",
             "  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>",
             "  ",
-            "  <a href=\"#\"><img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\"></a>",
+            "  <a href=\"#\"><img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\"></a>",
             "  ",
             "  <p>Things cats love:</p>",
             "  <ul>",
@@ -925,7 +925,7 @@
       "title": "Create a Form Element",
       "description": [
         "You can build web forms that actually submit data to a server using nothing more than pure HTML. You can do this by specifying an action on your <code>form</code> element.",
-        "For example:",
+        "例如:",
         "<code>&#60;form action=\"/url-where-you-want-to-submit-form-data\"&#62;&#60;/form&#62;</code>",
         "<hr>",
         "Nest your text field inside a <code>form</code> element, and add the <code>action=\"/submit-cat-photo\"</code> attribute to the form element."
@@ -955,7 +955,7 @@
             "<main>",
             "  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>",
             "  ",
-            "  <a href=\"#\"><img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\"></a>",
+            "  <a href=\"#\"><img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\"></a>",
             "  ",
             "  <p>Things cats love:</p>",
             "  <ul>",
@@ -1017,7 +1017,7 @@
             "<main>",
             "  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>",
             "  ",
-            "  <a href=\"#\"><img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\"></a>",
+            "  <a href=\"#\"><img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\"></a>",
             "  ",
             "  <p>Things cats love:</p>",
             "  <ul>",
@@ -1046,7 +1046,7 @@
       "title": "Use HTML5 to Require a Field",
       "description": [
         "You can require specific form fields so that your user will not be able to submit your form until he or she has filled them out.",
-        "For example, if you wanted to make a text input field required, you can just add the attribute <code>required</code> within your <code>input</code> element, like this: <code>&#60;input type=\"text\" required&#62;</code>",
+        "例如, if you wanted to make a text input field required, you can just add the attribute <code>required</code> within your <code>input</code> element, like this: <code>&#60;input type=\"text\" required&#62;</code>",
         "<hr>",
         "Make your text <code>input</code> a <code>required</code> field, so that your user can't submit the form without completing this field.",
         "Then try to submit the form without inputting any text. See how your HTML5 form notifies you that the field is required?"
@@ -1068,7 +1068,7 @@
             "<main>",
             "  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>",
             "  ",
-            "  <a href=\"#\"><img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\"></a>",
+            "  <a href=\"#\"><img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\"></a>",
             "  ",
             "  <p>Things cats love:</p>",
             "  <ul>",
@@ -1103,7 +1103,7 @@
         "All related radio buttons should have the same <code>name</code> attribute to create a radio button group. By creating a radio group, selecting any single radio button will automatically deselect the other buttons within the same group ensuring only one answer is provided by the user.",
         "Here's an example of a radio button:",
         "<blockquote>&#60;label&#62; <br>&nbsp;&nbsp;&#60;input type=\"radio\" name=\"indoor-outdoor\"&#62;Indoor <br>&#60;/label&#62;</blockquote>",
-        "It is considered best practice to set a <code>for</code> attribute on the <code>label</code> element, with a value that matches the value of the <code>id</code> attribute of the <code>input</code> element. This allows assistive technologies to create a linked relationship between the label and the child <code>input</code> element. For example:",
+        "It is considered best practice to set a <code>for</code> attribute on the <code>label</code> element, with a value that matches the value of the <code>id</code> attribute of the <code>input</code> element. This allows assistive technologies to create a linked relationship between the label and the child <code>input</code> element. 例如:",
         "<blockquote>&#60;label for=\"indoor\"&#62; <br>&nbsp;&nbsp;&#60;input id=\"indoor\" type=\"radio\" name=\"indoor-outdoor\"&#62;Indoor <br>&#60;/label&#62;</blockquote>",
         "<hr>",
         "Add a pair of radio buttons to your form, each nested in its own label element. One should have the option of <code>indoor</code> and the other should have the option of <code>outdoor</code>. Both should share the <code>name</code> attribute of <code>indoor-outdoor</code> to create a radio group."
@@ -1149,7 +1149,7 @@
             "<main>",
             "  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>",
             "  ",
-            "  <a href=\"#\"><img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\"></a>",
+            "  <a href=\"#\"><img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\"></a>",
             "  ",
             "  <p>Things cats love:</p>",
             "  <ul>",
@@ -1217,7 +1217,7 @@
             "<main>",
             "  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>",
             "  ",
-            "  <a href=\"#\"><img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\"></a>",
+            "  <a href=\"#\"><img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\"></a>",
             "  ",
             "  <p>Things cats love:</p>",
             "  <ul>",
@@ -1249,7 +1249,7 @@
       "title": "Check Radio Buttons and Checkboxes by Default",
       "description": [
         "You can set a checkbox or radio button to be checked by default using the <code>checked</code> attribute.",
-        "To do this, just add the word \"checked\" to the inside of an input element. For example:",
+        "To do this, just add the word \"checked\" to the inside of an input element. 例如:",
         "<code>&#60;input type=\"radio\" name=\"test-name\" checked&#62;</code>",
         "<hr>",
         "Set the first of your <code>radio buttons</code> and the first of your <code>checkboxes</code> to both be checked by default."
@@ -1275,7 +1275,7 @@
             "<main>",
             "  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>",
             "  ",
-            "  <a href=\"#\"><img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\"></a>",
+            "  <a href=\"#\"><img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\"></a>",
             "  ",
             "  <p>Things cats love:</p>",
             "  <ul>",
@@ -1345,7 +1345,7 @@
             "<main>",
             "  <p>Click here to view more <a href=\"#\">cat photos</a>.</p>",
             "  ",
-            "  <a href=\"#\"><img src=\"https://bit.ly/fcc-relaxing-cat\" alt=\"A cute orange cat lying on its back.\"></a>",
+            "  <a href=\"#\"><img src=\"https://ofa83l6ao.qnssl.com/relaxing-cat.jpg\" alt=\"一只仰卧着的萌猫\"></a>",
             "  ",
             "  <p>Things cats love:</p>",
             "  <ul>",
